@@ -70,7 +70,10 @@ library(tidyverse)
 # Convert it to a tibble using `as_tibble()` and assign it to `df_mtcars`.  
 # Use `?as_tibble()` to read the documentation before doing so.
 
+mtcars
 
+df_mtcars <-as_tibble(mtcars)
+df_mtcars
 
 
 # 8: `mtcars` has the following columns:
@@ -90,15 +93,30 @@ library(tidyverse)
 # Display the column names of `df_mtcars` using `colnames()`.  
 # Do NOT assign the result to a new object.
 
+df_mtcars <-as_tibble(mtcars)
+df_mtcars
+colnames(df_mtcars)
+
 # 9: Extract the row names of the `mtcars` dataset using `rownames()`.  
 # Assign the result to `v_make`.
 
+rownames(mtcars)
+v_make <- rownames(mtcars)
+v_make
+
 # 10: Add `v_make` as a new column to `df_mtcars` and name the column `"make"`.
+
+df_mtcars 
+  mutate (df_mtcars, v_make)
+
 
 # 11: Filter `df_mtcars` to include only rows where:  
 # - `mpg` is less than 20 AND  
 # - `disp` is greater than 200  
 # Assign the result to `df_subset`.
+  
+#filter(df_mtcars, mpg[0:20], 
+
 
 # 12: Count how many car makes meet the above conditions (Q11).
 # Apply `nrow()` to `df_subset`. Use ?nrow() for the usage of nrow() function.
