@@ -152,3 +152,4 @@ mycv <- function(v) {
 mycv
 #can use your code as a function! and it runs the same way
 mycv(x)
+
