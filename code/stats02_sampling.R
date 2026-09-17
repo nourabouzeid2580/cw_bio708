@@ -73,7 +73,7 @@ print(df_i)
 #randomly sample 10 individuals 
 
 
-df_i <- df_h0 %>% 
+df_i <- df_h1 %>% 
   sample_n(size = 10)
 
 print(df_i)
