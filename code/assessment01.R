@@ -107,7 +107,7 @@ v_make
 # 10: Add `v_make` as a new column to `df_mtcars` and name the column `"make"`.
 
 df_mtcars 
-  mutate (df_mtcars, v_make)
+  mutate (df_mtcars = v_make)
 
 
 # 11: Filter `df_mtcars` to include only rows where:  
